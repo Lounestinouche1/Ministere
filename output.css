@@ -515,10 +515,15 @@ video {
 .wilaya{
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px;
 }
 .wilaya:hover{
   color: mediumblue;
-
+  background-color: #9ca3af;
+  transition: ease-in-out 0.5s;
 }
 .links{
   position: relative;

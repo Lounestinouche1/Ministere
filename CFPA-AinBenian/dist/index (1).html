@@ -12,7 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
 
     <!-- Link CSS -->
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="output.css">
 
     <!-- icon onglet -->
     <link rel="icon" type="image/png" href="../images/logo_cfpa.png">
@@ -32,54 +32,58 @@
 </head>
 
 <body class="bg-white dark:bg-gray-800">
+    <!-- Banner -->
+    <header>
+        <div id="banner" tabindex="-1" class="flex z-50 gap-8 justify-center items-center py-3 px-4 w-full bg-gray-50 border border-b border-gray-200 sm:items-center">
+            <p class="text-sm font-semibold text-gray-700"><strong class="text-blue-700">الموقع: </strong>عين بنيان ، الجزائر ، الجزائر </p>
+            <p class="text-sm font-semibold text-gray-700"> cfpaainbenian1@hotmail.com<strong class="text-blue-700"> :البريد</strong></p>
+            <p class="text-sm font-semibold text-gray-700"><strong class="text-blue-700">للإتصال:</strong> 023 39 83 75/023 39 83 76</p>
+
+            <button id="theme-toggle" type="button" class="justify-end items-end text-blue-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            </button>
+        </div>
+    </header>
 
     <!-- NavBar -->
     <header>
       <nav class="sticky top-0 w-full z-10 bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
           <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-            <!-- Button EN -->
-            <!-- <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"><strong>En</strong></a> -->
-            <button id="theme-toggle" type="button" class="justify-end items-end text-blue-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-            </button>
-
+            <a href="#" class="flex items-center">
+              <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><strong class="text-blue-700">CFPA</strong><strong> AINBENIAN</strong></span>
+            </a>
               <div class="flex items-center lg:order-2">
-                  <a href="#" style="display: flex;" class="flex items-center">
-                    <span class="self-center text-xl font-normal whitespace-nowrap dark:text-white"> وزارة التكوين والتعليم المهنيين</span>
-                    <img src="../Www.CFPA ain-benian.com/images/logo_cfpa.png" alt="" class="tswira">
-                  </a>
-
-                  <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                <a href="./index.html" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"><strong>En</strong></a>
+                <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                       <span class="sr-only">Open main menu</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                       <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                   </button>
-                  
               </div>
               <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                   <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                       <li>
-                          <a href="../Www.CFPA ain-benian.com/مـــدونة الشعـــب المهنيـــــة المحينة النهائية 2019 الطبعة االعربية.pdf" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">مدونة</a>
+                        <a href="../club cfpa/club.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">النادي</a>
                       </li>
                       <li>
-                        <a href="#" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">أنماط التكوين<svg class="w-4 h-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
+                          <a href="../مـــدونة الشعـــب المهنيـــــة المحينة النهائية 2019 الطبعة االعربية.pdf" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">مدونة</a>
+                      </li>
+                      <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"><a href="/Web Center/cfpa formation.htm">  أنماط التكوين</a><svg class="w-4 h-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
                         <!-- Configuration Patterns menu -->
                         <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                               <li>
-                                <a href="./presentiel.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">حضور</a>
+                                <a href="../presentiel.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">حضور</a>
                               </li>
                               <li>
-                                <a href="./apprentissage.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">تمهين</a>
+                                <a href="../apprntissage.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">تمهين</a>
                               </li>
                         </div>
                     </li>
                       <li>
-                          <a href=".//wilaya.html" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent" aria-current="page">مراكز التكوين</a>
-                      </li>
-                      <li>
-                          <a href="../dist/index (2).html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">البطاقة الفنية</a>
+                          <a href="index (1).html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">البطاقة الفنية</a>
                       </li>
                   </ul>
               </div>
@@ -88,63 +92,64 @@
   </header>
 
       <!-- Home Page -->
-      <section class="text-center my-24 py-16">
-        <a href=""><h1 style="display: flex; justify-content: center;" class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"><img src="../Www.CFPA ain-benian.com/images/logo_cfpa.png" alt="" class="tswira"><strong class="text-blue-700">مرحبا بكم في وزارة التكوين والتعليم المهنيين</strong><img src="../Www.CFPA ain-benian.com/images/logo_cfpa.png" alt="" class="tswira"></h1></a>
-            <p class="mb-6 py-2 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"> اختر مستقبلك بنفسك و المهنة التي تناسبك، يمكنك الإطلاع على أنماط التكوين و المعاهد التي تقدمها من خلال هذا الموقع</p>
-                <a href="../Www.CFPA ain-benian.com/استمارة التسجيل.docx" class="animate-bounce inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                <p class="animate-bounce">التسجيل  عبر مهنتي</p>
+      <section class="text-center my-16 py-16">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"> <strong class="text-blue-700" ><a href="https://www.mfep.gov.dz" style="display: flex; justify-content: center; gap: 10px;"><img src="../images/logo_cfpa.png" class="tswira"> وزارة التكوين و التعليم المهنيين <img src="../images/logo_cfpa.png" class="tswira"></a></strong></h1>
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"> <strong class="text-blue-700" >CFPA AINBENIAN</strong> مرحبًا بكم في  </h1>
+            <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">في مركز التدريب المهني والتلمذة المهنية في يوسف بن خروفا ، نعطي الأولوية للصناعات حيث يمكن للتدريب على المهارات العملية والإرشاد والوصول إلى الموارد إطلاق العنان للإمكانات الفردية وتعزيز النجاح المهني على المدى الطويل.</p>
+            <a href="../استمارة التسجيل.docx" class="animate-bounce inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                <p class="animate-bounce">إستمارة التسجيل</p>
             </a>
       </section>
 
-      <!-- Information About Minister -->
-      <section class="text-gray-700 body-font">
+      <!-- Information About The Center: -->
+      <section class="text-gray-900 body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img class="object-cover object-center rounded" alt="hero" src="../dist/image/وزارة التكوين والتعليم المهنيين.jpg">
-          </div>
-          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-end md:text-right items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-white">وزارة التكوين والتعليم المهنيين</h1>
-            <p class="mb-8 py-3 leading-relaxed dark:text-gray-400">وزارة التكوين والتعليم المهني في الجزائر هي وزارة مسؤولة عن تطوير وتنفيذ السياسات والبرامج التعليمية المهنية في البلاد. وتهدف هذه الوزارة إلى توفير التدريب والتعليم المهني عالي الجودة للشباب الجزائري، بما يمكنهم من الحصول على مهارات ومعارف تؤهلهم للانخراط في سوق العمل وتحسين فرصهم في الحصول على وظائف مدفوعة الأجر. وتسعى الوزارة إلى تعزيز الشراكة بين المؤسسات التعليمية والشركات الخاصة والعامة، بهدف زيادة فرص التوظيف للشباب المتخرجين</p>
-          </div>
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-end md:text-right mb-16 md:mb-0 items-center text-center">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-10 font-bold text-gray-900 dark:text-white">معلومات عن المركز</h1>
+                    <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">التسمية:</strong> مركز يوسف بن خروفه للتدريب المهني والتلمذة الصناعية</p>
+                    <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">تاريخ الإنشاء والتكاليف :</strong>  المرسوم ن83-57 ن355-84 الصادر في 24 نوفمبر 1984</p>
+                    <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">العنوان:</strong> الطريق الوطني 11 الجميلة ، عين بنيان ، ولاية الجزائر</p>
+                    <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">رقمنا:</strong>  023 39 83 75/023 39 83 76</p>
+                    <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">cfpaainbenian1@hotmail.com  </strong>:بريدنا</p>
+                    <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700"> CFPA AinBenian </strong >:صفحتنا على الفيسبوك</p>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                 <img class="object-cover object-center rounded" alt="hero" src="image/Information About The Center.jpg">
+            </div>
         </div>
       </section>
 
-      <!-- les opportunité des défirent spécialités -->
-      <section class="text-gray-700 body-font">
+      <!-- Pedagogical Halls: -->
+      <section class="text-gray-600 body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-right md:text-right mb-16 md:mb-0 items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-white">فرص التخصصات التي تقدمها لنا وزارة التكوين المهني والتعليم الجزائري</h1>
-            <p class="mb-8 leading-relaxed dark:text-gray-400">وزارة التكوين والتعليم المهني في الجزائر توفر فرصاً متعددة للشباب الجزائري لاكتساب المهارات والمعارف المتخصصة في مختلف المجالات. فمن خلال الوزارة، يمكن للطلاب الحصول على تدريب وتعليم مهني في مجالات مثل الكهرباء، الإلكترونيات، الحاسوب، السياحة، الفندقة، الطبخ، الصناعة والزراعة، بالإضافة إلى مجالات أخرى. وبفضل هذه الفرص، يستطيع الشباب الحصول على مهارات وخبرات متخصصة تؤهلهم للعمل في سوق العمل المحلي والدولي، وتساعدهم في بناء مستقبل وظيفي ناجح. كما تسعى الوزارة إلى تطوير البرامج التعليمية وتوفير الموارد والتسهيلات اللازمة لدعم الطلاب والخريجين في رحلتهم التعليمية والمهنية</p>
-          </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="../dist/image/فرص التخصصات.jpg">
-          </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="image/Pedagogical Halls.jpg">
+            </div>
+            <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-end md:text-right items-center text-center">
+              <h1 class="title-font sm:text-4xl text-3xl mb-10 font-bold text-gray-900 dark:text-white">القاعات التربوية</h1>
+              <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">ورش عمل:</strong>          09</p>
+              <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">القاعات:</strong>          13</p>
+              <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">القاعات المتخصصة:</strong>  02</p>
+              <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">قاعات الحلويات:</strong>       01</p>
+              <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">غرفة الأتمتة:</strong>    04</p>
+              <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">المكتبة:</strong>        01</p>
+            </div>
         </div>
       </section>
 
-      <!-- Les Centers Formations -->
-      <section class="text-gray-700 body-font">
+      <!-- Center Facilities -->
+      <section class="text-gray-900 body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <a href="index (3).html"><img class="object-cover object-center rounded" alt="hero" src="../dist/image/مراكز التدريب.jpg"></a>
-          </div>
-          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-end md:text-right items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-white">مراكز التدريب والتعليم المهني التي تزودنا بالتدريب من وزارة التدريب والتعليم المهني</h1>
-            <p class="mb-8 py-3 leading-relaxed dark:text-gray-400">يعتبر مركز التكوين المهني والتدريب الذي توفره وزارة التكوين والتعليم المهني في الجزائر من أهم المرافق التعليمية في البلاد، حيث يتيح للشباب الحصول على تدريب وتعليم مهني عالي الجودة وفق المعايير الدولية. يتضمن هذا المركز عدة تخصصات مثل الكهرباء، الإلكترونيات، الحاسوب، السياحة، الفندقة، الطبخ، الصناعة والزراعة، بالإضافة إلى غيرها من المجالات. ويتميز مركز التكوين المهني بوجود أساتذة متميزين وتجهيزات حديثة ومتطورة تساعد الطلاب على اكتساب المهارات والخبرات المطلوبة في سوق العمل. كما يتيح المركز فرصة للطلاب للتعلم بطريقة عملية وتطبيق النظريات الدراسية على أرض الواقع من خلال برامج التدريب الميداني والتعلم العملي</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- les opportunité des défirent spécialités -->
-      <section class="text-gray-700 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-right md:text-right mb-16 md:mb-0 items-right text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-white">الأنشطة والفعاليات</h1>
-            <p class="mb-8 leading-relaxed dark:text-gray-400">يعمل وزارة التكوين والتعليم المهني في الجزائر على تنظيم العديد من الأنشطة والمسابقات التي تهدف إلى تعزيز مهارات وكفاءات الطلاب والمتدربين في مختلف المجالات المهنية. وتشمل هذه الأنشطة والمسابقات على سبيل المثال لا الحصر: الأسابيع التحسيسية وورش العمل والزيارات الميدانية والمسابقات الوطنية والدولية. وتساعد هذه الفعاليات على تعزيز الروح التنافسية بين الطلاب وتعزيز مهاراتهم العملية وتعزيز الثقة بالنفس وتحفيزهم على الابتكار والإبداع. وتمثل هذه الأنشطة والمسابقات فرصة قيمة للشباب في الجزائر لاكتشاف مواهبهم وتطوير مهاراتهم المهنية في بيئة تعليمية محفزة ومشجعة</p>
-          </div>
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="../dist/image/الأنشطة والفعاليات.jpg">
-          </div>
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-end md:text-right mb-16 md:mb-0 items-center text-center">
+              <h1 class="title-font sm:text-4xl text-3xl mb-10 font-bold text-gray-900 dark:text-white">مرافق المركز</h1>
+                <p class="mb-5 items-end justify-start leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">المساحة الكلية:</strong> 3 هكتار</p>
+                <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">منطقة بناء:</strong> 2.8م<sup>2</sup></p>
+                <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">قدرة الامتصاص:</strong> 700</p>
+                <p class="mb-5 leading-relaxed font-normal text-gray-900 dark:text-gray-400"><strong class="text-lg text-blue-700">عدد الملحقات التابعة للمركز:</strong> 01</p>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                 <img class="object-cover object-center rounded" alt="hero" src="image/Center Facilities.jpg">
+            </div>
         </div>
       </section>
 
