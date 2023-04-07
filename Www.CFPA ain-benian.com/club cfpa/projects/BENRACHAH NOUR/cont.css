@@ -1,0 +1,43 @@
+body{
+    background-image: url(dalina.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+h1 {
+ color: rgb(38, 0, 54);
+ background-color: rgba(177, 173, 148, 0.952);
+ width: 50%;
+ min-width: 500px;
+ margin: auto;
+ padding: 7%;
+ border: solid rgba(152, 152, 168, 0.925);
+ border-radius: 3%;
+ text-align: justify;
+}
+.no{
+    mix-blend-mode: multiply;
+    width: 100px;
+    height: 120px;
+    margin: bottom left;
+    }
+ .social{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }    
+ .social li{
+       list-style: none;
+   }
+ .social li a{
+       font-size: 2em;
+       color: rgb(102, 88, 69);
+       margin: 0 10px;
+       display: inline-block;
+       transition: 0.5s;
+   }
+   .social li a:hover{
+       transform: translateY(-10px);
+    }

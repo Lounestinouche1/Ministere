@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Petals</title>
+    <link rel="stylesheet" href="flr.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Noto+Serif+Display:ital,wght@1,100&family=Noto+Serif:ital,wght@1,700&family=Oswald:wght@200&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body onload="slider()">
+   <header>   
+    <a href="#" class="logo">Pretty Petals</a> 
+     <ul>
+     <li><a href="flr.html">Home</a></li>
+     <li><a href="us.html">About</a></li>
+    <!-- <li><a href="#">Category</a></li>-->
+     <li><a href="cont.html">Contact</a></li>
+     </ul>
+   </header>
+   <script class="text/javascript"> 
+    window.addEventListener("scroll",function(){
+     var header = document.querySelector("header");
+     header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+                         <!--navbar-->
+
+    <div class="slider">
+      <img src="vm.jpg" id="slideImg">
+       </div>
+       <div class="content">
+     <h1>Pretty Petals</h1>
+    <a href="boutique.html">New Collections</a>
+       </div>
+         </div>
+                                                  <!--head-->
+                                                    
+                                                  <!--script-->
+         <script>
+          var slideImg = document.getElementById("slideImg");
+           
+          var images = new Array(
+                "vm.jpg",
+                "ned.jpeg",
+                "qa.jpg",
+          );
+        var len = images.length;
+        var i = 0;
+    
+        function slider(){
+           if(i > len-1){
+            i = 0;
+           }
+           slideImg.src = images[i];
+           i++;
+           setTimeout('slider()',3000);
+        }
+
+</script>
+
+ <!--service-->
+<div class="nour"> <h1>Our Services</h1></div>
+
+<div class="one">
+ <div class="card">
+  <div class="her">
+      <div class="ho">
+      <a href="#"><i class="fa-solid fa-car-rear"></i></a>
+       <p> Fast delivery to your home at any time</p>
+      </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="her">
+      <div class="ho">
+      <a href="#"><i class="fa-solid fa-dollar-sign"></i></a>
+       <p>Cash on delivery for the 58 wilayas</p>
+      </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="her">
+      <div class="ho">
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i></i></a>
+       <p>Order online in just a few clicks </p>
+      </div>
+  </div>
+</div>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+</div>
+
+            <!--Footer-->
+
+<footer>
+  <img src="dalina.png" class="no">
+ <ul class="social">   
+ <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></li>
+ <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+ <li><a href="https://www.youtube.com/results?search_query=summer+shaker"><ion-icon name="logo-youtube"></ion-icon></a></li>
+ <li><a href="https://www.tiktok.com"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+ <li><a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&ifkv=AWnogHcNoSXsuNgvc-zAS1RM3G8U6HiJOdY-Zw9t9A4aKHdoiNbfupHf55H_U4P7B6xppUvgyf0Kug&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><ion-icon name="mail-open-outline"></ion-icon></a></li>
+ </ul>
+ <ul class="menu">
+ <li><a href="flr.html">Home</a></li>
+ <li><a href="us.html">About</a></li>
+ <li><a href="#our services">Our services</a></li>
+ </ul>
+ <p>@2023 Online Tutorials/ ALL Rights Reserved</p>
+</footer>
+</div>
+</div>
+
+
+   
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html> 

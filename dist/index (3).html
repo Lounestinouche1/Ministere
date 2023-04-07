@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CDN Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="/dist/output.css">
+
+    <!-- icon onglet -->
+    <link rel="icon" type="image/png" href="../images/logo_cfpa.png">
+    <!-- Dark Mode Switcher -->
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+
+    <!-- Title -->
+    <title>وزارة التكوين و التعليم المهنيين</title>
+</head>
+
+<body class="bg-white dark:bg-gray-800">
+    <!-- NavBar -->
+    <header>
+        <nav class="sticky top-0 w-full z-10 bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+              <!-- Button EN -->
+              <!-- <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"><strong>En</strong></a> -->
+              <button id="theme-toggle" type="button" class="justify-end items-end text-blue-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                  <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                  <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+              </button>
+  
+                <div class="flex items-center lg:order-2">
+                    <a href="#" style="display: flex;" class="flex items-center">
+                      <span class="self-center text-xl font-normal whitespace-nowrap dark:text-white"> وزارة التكوين والتعليم المهنيين</span>
+                      <img src="../Www.CFPA ain-benian.com/images/logo_cfpa.png" alt="" class="tswira">
+                    </a>
+  
+                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                    
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="../Www.CFPA ain-benian.com/مـــدونة الشعـــب المهنيـــــة المحينة النهائية 2019 الطبعة االعربية.pdf" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">مدونة</a>
+                        </li>
+                        <li>
+                          <a href="#" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">أنماط التكوين<svg class="w-4 h-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
+                          <!-- Configuration Patterns menu -->
+                          <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                  <a href="./presentiel.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">حضور</a>
+                                </li>
+                                <li>
+                                  <a href="./apprentissage.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">تمهين</a>
+                                </li>
+                          </div>
+                      </li>
+                        <li>
+                            <a href=".//wilaya.html" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent" aria-current="page">مراكز التكوين</a>
+                        </li>
+                        <li>
+                            <a href="../dist/index (2).html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">البطاقة الفنية</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+      <!-- Page Article -->
+<main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
+    <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
+        <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+            <header class="mb-4 lg:mb-6 not-format">
+                
+                <h1 class="mb-4 text-right text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">:مراكز التكوين والتعليم المهني بالجزائر</h1>
+            </header>
+
+            <div class="text-right py-2 dark:text-gray-400" >
+                <ul dir="rtl" style="display: flex; flex-direction: column;  gap: 20px;" class="text-xl py-2 dark:text-gray-400">
+                    <li class="text-right dark:text-gray-400">
+                        <a href="../Www.CFPA ain-benian.com/dist/index (1).html" class="links">
+                        <img src="../Www.CFPA ain-benian.com/dist/image/Pedagogical Halls.jpg" alt="">
+                        <div>
+                            <h1><strong> مركز التكوين والتعليم المهني يوسف بن خروب(AINBENIAN) </strong></h1>
+                            <p style="font-size: medium;"> تاريخ الإنشاء والتكاليف :  المرسوم ن83-57 ن355-84 الصادر في 24 نوفمبر 1984</p>
+                            <p style="font-size: medium;">العنوان: الطريق الوطني 11 الجميلة ، عين بنيان ، ولاية الجزائر</p>
+                            <p style="font-size: medium;">رقمنا:  023 39 83 75/023 39 83 76</p>
+                            <p style="font-size: medium;">cfpaainbenian1@hotmail.com  :بريدنا</p>
+                            <p style="font-size: medium;">CFPA AinBenian :صفحتنا على الفيسبوك</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="text-right dark:text-gray-400">
+                        <a href="../Www.CFPA ain-benian.com/dist/index (1).html" class="links">
+                        <img src="../Www.CFPA ain-benian.com/dist/image/Pedagogical Halls.jpg" alt="">
+                        <div>
+                            <h1><strong> مركز التكوين والتعليم المهني سطاوالي</strong></h1>
+                            <p style="font-size: medium;"> تاريخ الإنشاء والتكاليف :  المرسوم ن83-57 ن355-84 الصادر في 24 نوفمبر 1984</p>
+                            <p style="font-size: medium;">العنوان: الطريق الوطني 11 الجميلة ، عين بنيان ، ولاية الجزائر</p>
+                            <p style="font-size: medium;">رقمنا:  023 39 83 75/023 39 83 76</p>
+                            <p style="font-size: medium;">cfpaainbenian1@hotmail.com  :بريدنا</p>
+                            <p style="font-size: medium;">CFPA AinBenian :صفحتنا على الفيسبوك</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="text-right dark:text-gray-400">
+                        <a href="../Www.CFPA ain-benian.com/dist/index (1).html" class="links">
+                        <img src="../Www.CFPA ain-benian.com/dist/image/Pedagogical Halls.jpg" alt="">
+                        <div>
+                            <h1><strong> مركز التكوين والتعليم المهني المحمدية</strong></h1>
+                            <p style="font-size: medium;"> تاريخ الإنشاء والتكاليف :  المرسوم ن83-57 ن355-84 الصادر في 24 نوفمبر 1984</p>
+                            <p style="font-size: medium;">العنوان: الطريق الوطني 11 الجميلة ، عين بنيان ، ولاية الجزائر</p>
+                            <p style="font-size: medium;">رقمنا:  023 39 83 75/023 39 83 76</p>
+                            <p style="font-size: medium;">cfpaainbenian1@hotmail.com  :بريدنا</p>
+                            <p style="font-size: medium;">CFPA AinBenian :صفحتنا على الفيسبوك</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="text-right dark:text-gray-400">
+                        <a href="../Www.CFPA ain-benian.com/dist/index (1).html" class="links">
+                        <img src="../Www.CFPA ain-benian.com/dist/image/Pedagogical Halls.jpg" alt="">
+                        <div>
+                            <h1><strong> مركز التكوين والتعليم المهني العاشور</strong></h1>
+                            <p style="font-size: medium;"> تاريخ الإنشاء والتكاليف :  المرسوم ن83-57 ن355-84 الصادر في 24 نوفمبر 1984</p>
+                            <p style="font-size: medium;">العنوان: الطريق الوطني 11 الجميلة ، عين بنيان ، ولاية الجزائر</p>
+                            <p style="font-size: medium;">رقمنا:  023 39 83 75/023 39 83 76</p>
+                            <p style="font-size: medium;">cfpaainbenian1@hotmail.com  :بريدنا</p>
+                            <p style="font-size: medium;">CFPA AinBenian :صفحتنا على الفيسبوك</p>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="text-right dark:text-gray-400">
+                        <a href="../Www.CFPA ain-benian.com/dist/index (1).html" class="links">
+                        <img src="../Www.CFPA ain-benian.com/dist/image/Pedagogical Halls.jpg" alt="">
+                        <div>
+                            <h1><strong> مركز التكوين والتعليم المهني بن عكنون </strong></h1>
+                            <p style="font-size: medium;"> تاريخ الإنشاء والتكاليف :  المرسوم ن83-57 ن355-84 الصادر في 24 نوفمبر 1984</p>
+                            <p style="font-size: medium;">العنوان: الطريق الوطني 11 الجميلة ، عين بنيان ، ولاية الجزائر</p>
+                            <p style="font-size: medium;">رقمنا:  023 39 83 75/023 39 83 76</p>
+                            <p style="font-size: medium;">cfpaainbenian1@hotmail.com  :بريدنا</p>
+                            <p style="font-size: medium;">CFPA AinBenian :صفحتنا على الفيسبوك</p>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+
+      <!-- Footer -->
+      <footer class="p-4 font-normal bg-white sm:p-6 dark:bg-gray-800">
+        <div class="mx-auto max-w-screen-xl">
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm font-mono text-gray-900 sm:text-center dark:text-gray-400">© 2022 <a href="#" class="hover:underline">Future Devloper™</a>. All Rights Reserved.</span>
+
+                <ul class="flex flex-wrap justify-center font-normal items-center mb-4 text-gray-900 dark:text-white">
+                  <li>
+                      <a href="#" class="mr-4 font-mono hover:underline md:mr-6 ">Privacy Policy</a>
+                  </li>
+                  <li>
+                      <a href="#" class="mr-4 font-mono hover:underline md:mr-6">Licensing</a>
+                  </li>
+                  <li>
+                      <a href="#" class="mr-4 font-mono hover:underline md:mr-6 ">Terms</a>
+                  </li>
+              </ul>
+                <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                      <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="23px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="23px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M374.245,285.825l14.104,-91.961l-88.233,0l0,-59.677c0,-25.159 12.325,-49.682 51.845,-49.682l40.117,0l0,-78.291c0,0 -36.408,-6.214 -71.214,-6.214c-72.67,0 -120.165,44.042 -120.165,123.775l0,70.089l-80.777,0l0,91.961l80.777,0l0,222.31c16.197,2.542 32.798,3.865 49.709,3.865c16.911,0 33.512,-1.323 49.708,-3.865l0,-222.31l74.129,0Z" style="fill:#1877f2;fill-rule:nonzero;"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                      <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 128 128" height="23px" id="Layer_1" version="1.1" viewBox="0 0 128 128" width="23px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient gradientTransform="matrix(1 0 0 -1 594 633)" gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="-577.5122" x2="-482.4879" y1="501.1455" y2="636.8544"><stop offset="0" style="stop-color:#FFB900"/><stop offset="1" style="stop-color:#9100EB"/></linearGradient><path d="M128,112c0,8.8-7.2,16-16,16H16c-8.8,0-16-7.2-16-16V16C0,7.2,7.2,0,16,0h96c8.8,0,16,7.2,16,16V112z  " fill="url(#SVGID_1_)"/><g><g><path d="M86,112H42c-14.336,0-26-11.663-26-26V42c0-14.336,11.664-26,26-26h44c14.337,0,26,11.664,26,26v44    C112,100.337,100.337,112,86,112z M42,24c-9.925,0-18,8.075-18,18v44c0,9.925,8.075,18,18,18h44c9.925,0,18-8.075,18-18V42    c0-9.925-8.075-18-18-18H42z" fill="#FFFFFF"/></g><g><path d="M64,88c-13.234,0-24-10.767-24-24c0-13.234,10.766-24,24-24c13.233,0,24,10.766,24,24    C88,77.233,77.233,88,64,88z M64,48c-8.822,0-16,7.178-16,16s7.178,16,16,16s16-7.178,16-16S72.822,48,64,48z" fill="#FFFFFF"/></g><g><circle cx="89.5" cy="38.5" fill="#FFFFFF" r="5.5"/></g></g></svg>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                      <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="23px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="23px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M409.756,0l-307.512,0c-56.248,0 -102.244,46.024 -102.244,102.244l0,307.529c0,56.221 45.996,102.241 102.244,102.241l307.512,0c56.213,0 102.244,-46.02 102.244,-102.241l0,-307.529c0,-56.22 -46.031,-102.244 -102.244,-102.244Z" style="fill:#061a34;fill-rule:nonzero;"/><path d="M344.173,415.476l-53.95,0c-48.577,0 -84.78,-24.999 -84.78,-84.797l0,-95.764l-44.157,0l0,-51.851c48.577,-12.618 68.905,-54.428 71.239,-90.634l50.45,0l0,82.223l58.865,0l0,60.262l-58.865,0l0,83.386c0,24.996 12.622,33.636 32.703,33.636l28.495,0l0,63.539Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                      <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="23px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="23px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M501.299,132.766c-5.888,-22.03 -23.234,-39.377 -45.264,-45.264c-39.932,-10.701 -200.037,-10.701 -200.037,-10.701c0,0 -160.105,0 -200.038,10.701c-22.025,5.887 -39.376,23.234 -45.264,45.264c-10.696,39.928 -10.696,123.236 -10.696,123.236c0,0 0,83.308 10.696,123.232c5.888,22.03 23.239,39.381 45.264,45.268c39.933,10.697 200.038,10.697 200.038,10.697c0,0 160.105,0 200.037,-10.697c22.03,-5.887 39.376,-23.238 45.264,-45.268c10.701,-39.924 10.701,-123.232 10.701,-123.232c0,0 0,-83.308 -10.701,-123.236Z" style="fill:#ed1f24;fill-rule:nonzero;"/><path d="M204.796,332.803l133.018,-76.801l-133.018,-76.801l0,153.602Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                      <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="23px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="23px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/><g id="shapes"><rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"/><path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"/><path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;"/></g></g></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+  
+
+
+    <!-- CDN Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+    <!-- Drak Mode Switcher-->
+    <script>
+        var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+// Change the icons inside the button based on previous settings
+if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    themeToggleLightIcon.classList.remove('hidden');
+} else {
+    themeToggleDarkIcon.classList.remove('hidden');
+}
+
+var themeToggleBtn = document.getElementById('theme-toggle');
+
+themeToggleBtn.addEventListener('click', function() {
+
+    // toggle icons inside button
+    themeToggleDarkIcon.classList.toggle('hidden');
+    themeToggleLightIcon.classList.toggle('hidden');
+
+    // if set via local storage previously
+    if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        }
+
+    // if NOT set via local storage previously
+    } else {
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        }
+    }
+    
+});
+    </script>
+</body>
+</html>

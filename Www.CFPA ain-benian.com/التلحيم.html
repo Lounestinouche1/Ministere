@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CDN Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="المحاسبة.css">
+
+    <!-- icon onglet -->
+    <link rel="icon" type="image/png" href="./images/logo_cfpa.png">
+
+
+
+    <!-- Title -->
+    <title>التلحيم </title>
+</head>
+<body class="bg-white dark:bg-gray-800">
+    <!-- Banner -->
+    <header>
+      <div id="banner" tabindex="-1" class="flex z-50 gap-8 justify-center items-center py-3 px-4 w-full bg-gray-50 border border-b border-gray-200 sm:items-center">
+          <p class="text-sm font-semibold text-gray-700"><strong class="text-blue-700">الموقع: </strong>عين بنيان ، الجزائر ، الجزائر </p>
+          <p class="text-sm font-semibold text-gray-700"> cfpaainbenian1@hotmail.com<strong class="text-blue-700"> :البريد</strong></p>
+          <p class="text-sm font-semibold text-gray-700"><strong class="text-blue-700">للإتصال:</strong> 023 39 83 75/023 39 83 76</p>
+
+          <button id="theme-toggle" type="button" class="justify-end items-end text-blue-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+              <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+              <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+          </button>
+      </div>
+  </header>
+
+  <!-- NavBar -->
+  <header>
+    <nav class="sticky top-0 w-full z-10 bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+          <a href="#" class="flex items-center">
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><strong class="text-blue-700">CFPA</strong><strong> AINBENIAN</strong></span>
+          </a>
+            <div class="flex items-center lg:order-2">
+              <a href="./dist/index.html" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"><strong>En</strong></a>
+              <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                      <a href="./club cfpa/club.html" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">النادي</a>
+                    </li>
+                    <li>
+                        <a href="/مـــدونة الشعـــب المهنيـــــة المحينة النهائية 2019 الطبعة االعربية.pdf" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">مدونة</a>
+                    </li>
+                    <li>
+                      <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"><a href="/Web Center/cfpa formation.htm">  أنماط التكوين</a><svg class="w-4 h-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                      <!-- Configuration Patterns menu -->
+                      <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                          <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                            <li>
+                              <a href="/presentiel.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">حضور</a>
+                            </li>
+                            <li>
+                              <a href="/apprntissage.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">تمهين</a>
+                            </li>
+                      </div>
+                  </li>
+                    <li>
+                        <a href="./dist/index (1).html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">البطاقة الفنية</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <section class="body">
+      <div class="container2">
+        <div class="title">
+            <h1><b> التلحيم </b></h1>
+            <h1><b>CML0701</b></h1>
+        </div>
+        <div  class="intcontainer">
+          <div dir="rtl" class="fichetechnique">
+            <h1>البطاقة الوصفية للتخصص </h1>
+          </div>
+
+          </div>
+          <div class="containersghir">
+            <div dir="rtl" class="information">
+              <img src="./images/التلحيم.jpg" alt="">
+              <h1><b> الشعبة المهنية:</b></h1>
+              <p>الإنشاءات المعدنية</p>
+              <h1><b> تسمية التخصص:</b></h1>
+              <p>التلحيم </p>
+              <h1><b>مستوى التاهيل:</b></h1>
+              <p> 02</p>
+              <h1><b>الشهادة المسلمة:</b></h1>
+              <p>شهادة الكفاءة المهنية (C.A.P)</p>
+              <h1><b>مدة التكوين:</b></h1>
+              <p> 12 شهرا</p>
+              <h1><b>شروط القبول:</b></h1>
+              <p>الرابعة متوسط </p>
+              <h1><b>نمط التكوين المفضل:</b></h1>
+              <p>التكوين الحضوري (الإقامي).</p>
+              <p>التكوين عن طريق التمهين.</p>
+            </div>
+            <div dir="rtl" class="description">
+              <h1><b>وصف التخصص:</b></h1>
+              <p>يضمن إنجاز التلحيم على المطيلات ، المجنبات إنطلاقا من المخططات التنفيذية ، و بمساعدة الوسائل: اليدوية، نصف الالية و الالية.</p>
+              <p>العامل في التلحيم يطبق عمليا على المعادن الحديدية، و يقوم بتسقيف الورشات، و إنجاز الابواب، و المصارع ذات الحجم الكبير، و يعمل على الحار البارد.</p>
+              <h1><b>المهام الأساسية:</b></h1>
+              <ul>
+                <li>اللحام بالقوس الكهربائي.</li>
+                <li>اللحام الاكسي أستيلين.</li>
+                <li>الحدادة لمختلف المقاطع الحديدية.</li>
+                <li>العمل على الابواب،و إنجاز النوافذ المختلفة.</li>
+                <li>إصلاح جميع الأعمال الحديدية.</li>
+                <li>إستخدام مختلف الالات، و الأدوات التي لها علاقة بالإختصاص.</li>
+                <li>الإمتثال للمتطلبات القانونية، التي تسير النشاط في ورش الإنتاج و المشاغل.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+    

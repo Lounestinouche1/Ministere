@@ -1,0 +1,61 @@
+
+.body{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: white;
+    height: 125%;
+    width: 100%;
+
+}
+
+.body h1{
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.container2{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    top: 10px;
+    gap: 1%;
+}
+.container2 a{
+    position: relative;
+    display: flex;
+    background-color: white;
+    width: 49%;
+    height: 150px;
+    border: solid 2px;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.3);
+    top: 10px;
+    gap: 10px;
+}
+.container2 a:hover{
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.6);
+    transition: ease-in-out 0.5s;
+    transform: scale(1.1);
+
+}
+
+.container2 a img{
+    width: 30%;
+}
+
+.container2 a div{
+    padding: 10px 10px;
+}
+
+.container2 a div p{
+    font-size: small;
+}

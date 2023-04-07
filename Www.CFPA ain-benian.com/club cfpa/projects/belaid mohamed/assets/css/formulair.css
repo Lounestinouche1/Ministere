@@ -1,0 +1,207 @@
+body{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: 100vh;
+
+}
+:root {
+    --font-heading: crimson;
+    --para-font: #777777;
+    --black: #222222;
+    --bg: rgba(237, 28, 70);
+    --white: #fff;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    
+}
+/*----- header Nav section start -----*/
+.header {
+    width: 100%;
+    height: 120vh;
+    background: url("../img/home-img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+.header .formulair{
+    width: 25%;
+    height: 350px;
+    border: #fff 2px solid;
+    border-radius: 10px;
+    background: linear-gradient(rgb(83, 39, 14),rgb(0, 0, 0));
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin-left: 950px;
+}
+
+section {
+    padding: 8rem 7%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.logo span {
+    color: var(--bg);
+}
+
+nav .links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-right: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    position: relative;
+}
+
+nav .links a:after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--bg);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s;
+}
+
+nav .links a:hover::after {
+    width: 100%;
+}
+
+nav #menu-btn,
+nav #close {
+    color: var(--white);
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.header .content {
+    padding: 150px 7%;
+    color: var(--white);
+}
+
+.header .content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 3rem 0;
+}
+
+.header .content h1 {
+    font-size: 5rem;
+    letter-spacing: 2px;
+}
+
+.btn {
+    padding: 1.3rem 5rem;
+    margin: 3rem 0;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: 0.3rem solid var(--font-heading);
+    border-radius: 7px;
+    background: none;
+    transition: all linear 0.5s;
+
+}
+
+.btn:hover {
+    background: var(--bg);
+    color: var(--white);
+    transform: translate(0px, -3px);
+}
+
+
+.nav-change {
+    background: rgba(0, 0, 0, 0.9);
+}
+/*------ header nav section End ------*/
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-radius: 50px;
+    width: 400px;
+    height: 60px;
+    
+}
+label{
+    width: 90px;
+    font-weight: bold;
+    margin-right: 1rem;
+    font-size: 1.9rem;
+    color: white;
+
+}
+input, textarea {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+button[type="submit"]{
+    padding: 1.3rem 5rem;
+    margin: 3rem 0;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: 0.3rem solid var(--font-heading);
+    border-radius: 7px;
+    background: none;
+    transition: all linear 0.5s;
+
+    
+}
+button:hover {
+    padding: 1.3rem 5rem;
+    margin: 3rem 0;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: 0.3rem solid var(--font-heading);
+    border-radius: 7px;
+    background: none;
+    transition: all linear 0.5s;
+
+}

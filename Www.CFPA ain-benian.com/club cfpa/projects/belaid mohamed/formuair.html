@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/formulair.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header Section start -->
+    <div class="header" id="home">
+        <nav id="navbar">
+            <a href="#home" class="logo">Central Perk coffee shop <span>.</span></a>
+            <div class="links" id="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#blog">Blog</a>
+                <a href="#service">Services</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="fas fa-bars" id="menu-btn" onclick="openmenu()"></div>
+            <div class="fa-solid fa-xmark" id="close" onclick="closemenu()"></div>
+        </nav>
+        <div class="content">
+            <h3>your order will reach you soon!!! </h3>
+            <h1>thank you for your  <br>purchase</h1>
+            <a href="index.html"><button class="btn">check more stuff</button></a>
+        </div>
+        <div class="formulair">
+            <form action="submit_form.php" method="post"> <div class="form-group"> 
+                <label for="productName">Product Name:</label> <input type="text" class="form-control" id="productName" name="productName" required> 
+            </div> 
+            <div class="form-group"> 
+                <label for="quantity">Quantity:</label> 
+                <input type="number" class="form-control" id="quantity" name="quantity" required> 
+            </div> 
+            <div class="form-group"> 
+                <label for="fullName">Full Name:</label> 
+                <input type="text" class="form-control" id="fullName" name="fullName" required> 
+            </div> 
+            <div class="form-group"> <label for="email">Email:</label> 
+                <input type="email" class="form-control" id="email" name="email" required> 
+            </div> 
+            <div class="form-group"> <label for="address">Address:</label> 
+                <textarea class="form-control" rows="3" id="address" name="address" required></textarea> 
+            </div> 
+            <button type="submit" class="btn">Enjoy your coffee </button>
+            </div> 
+    </div>
+    <!-- Header Section end -->
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>

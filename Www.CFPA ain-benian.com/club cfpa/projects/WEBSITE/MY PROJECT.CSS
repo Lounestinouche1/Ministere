@@ -1,0 +1,204 @@
+
+*{padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: sans-serif;}
+.u
+{height:100vh ;
+width: 100%;
+position:relative ;
+background:url(  ) ;
+display: flex;
+justify-content:center ;
+ align-items: center;}
+
+.u .box{
+  height:86VH;
+  width: 75%;
+  padding: 0 20PX;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index:10; 
+  border: 2px solid  rgba(255, 255, 255, 0.7);
+  border-radius: 20PX;
+  display: flex;
+  backdrop-filter: blur(25px);
+box-shadow: -15px 17PX 17PX rgba(10, 10, 10); 
+}
+.u ::after{
+  content:"" ;
+  position: absolute;
+  height: "300PX";
+  width: 300PX;
+  background:#C1D9FB ;
+  transform: translate (490PX,150PX);
+  border-radius: 50%;
+
+}
+.u .box nav{  height: 7%;
+width: 95%;
+position: absolute; 
+display: flex;
+ align-items: center; 
+justify-content: space-between;
+margin: 15PX auto;
+padding: 20PX; 
+}
+.u .box nav ul li{
+  display: inline-block;
+  padding: 0% 20PX ;
+}
+.u .box nav ul li a { text-decoration: none;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',cursive;
+   transition: 0,4S;
+  font-size: 20PX;
+color: black;}
+.u .box nav ul li a:hover
+ { color: blue;}
+nav .logo {
+  font-size:35PX ;
+color: black;
+font-weight: bold;
+margin-top: 50px;
+margin-left: 30PX;
+}
+.u .box .V {
+  position: relative;
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  width: 100%;
+  margin-top:8%;
+  padding-left: 80px;
+}
+.u .box .V .SEC1{position: relative;
+width: 40%;}
+
+.u .box .V .SEC1 h1{ 
+   margin-TOP: 50PX;
+font-size: 50PX;
+font-weight: bold;
+color: black;
+}
+.u .box .V .SEC1 h3{
+  font-size: 24PX;
+color: rgb(0, 0, 0); 
+font-size: 24PZ;
+margin-bottom: 10px;
+}
+.u .box .V .SEC1 p{
+  font-size: 18PX;
+color:black;
+margin-bottom: 30px;
+overflow:hidden;
+
+}
+
+.u .box .V .SEC1 .BTN{
+   padding: 15PX 20PX;
+   border: 2px SOLID aqua;
+   border-radius: 90px;
+  background-color: aquamarine;
+background-image: linear-gradient(AQUA,rgb(0, 68, 255), rgb(0, 128, 117) );
+font-weight: bold;
+color: black;
+text-decoration: none;
+transition: 0,3s;
+}
+.u .box .V .SEC1 .BTN:hover{ 
+  background-color: bisque;
+   color: aqua;
+
+}
+.u .box .V .SEC2{  width: 40%;
+margin-right: 50px; }
+
+.u .box .V .SEC2 img {
+  width: 100%; 
+
+}
+.u .box .V .SEC3 ul li { 
+  display: flex ;
+flex-direction: column;
+gap: "30PX";
+
+left: 10PX;
+top: 30%;
+}
+.V .SEC3  ul li  a i{font-size: 50PX;
+color:#C1D9FB; 
+transition:0,3S ;
+margin-bottom: 20px;
+}
+.V .SEC3 a i:hover{ color: blueviolet;
+transition: 5s;
+}
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body { background-color:rgb(0, 153, 255);
+  background-image: linear-gradient(to right , rgb(0, 153, 255), rgb(0, 45, 128), brown);
+}
+
+
+.container {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 100px auto 0;
+}
+
+.cube {
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: spin 15s infinite linear;
+}
+.face 
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(momi.png)  ;
+  background-size: 200px;
+  
+ }
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.front {
+  transform: rotateX(0deg) translateZ(100px);
+}
+.back {
+  transform: rotateX(-180deg) translateZ(100px);
+}
+
+@keyframes spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+
+
+
+
